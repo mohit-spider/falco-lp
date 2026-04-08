@@ -27,6 +27,12 @@
     border-radius: 16px;
 }
 
+.gradient-border {
+  border: 1px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(270deg, #FFFFFF 0%, #C1C0C0 34.13%, #C1C0C0 87.02%, #FFFFFF 100%);
+}
+
 @media (min-width:1024px){
 
     .subsidiaries-cards::before{

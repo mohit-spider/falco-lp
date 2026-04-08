@@ -179,7 +179,7 @@ body {
 }
 
 .container{
-  max-width: 1640px;
-  /* padding-inline: 20px; */
+  max-width: 1440px;
+  padding-inline: 20px;
   margin: 0 auto ;
 }

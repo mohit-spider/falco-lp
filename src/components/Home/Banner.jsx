@@ -64,7 +64,7 @@ export const Banner = () => {
 
                     {/* Overlay Content */}
                     <div className="relative inset-0 z-10 h-full flex items-center bg-black/10">
-                        <div className="container pl-[20px] lg:pl-[98px] md:pt-[150px] ">
+                        <div className="pl-[20px] lg:pl-[98px] md:pt-[150px] ">
                             <div className="max-w-full ">
                                 <h1 className="font-inter font-semibold md:font-medium  text-[32px] flex text-start md:text-[50px] leading-[109%] md:leading-[1.1] text-white">
                                     Building Scalable Ventures Across
