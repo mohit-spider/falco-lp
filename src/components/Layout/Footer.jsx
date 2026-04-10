@@ -103,8 +103,8 @@ export const Footer = () => {
                         className='w-[24px] h-[24px]'
                     />
                 </div>
-                <div className='text-white divide-amber-900 cursor-pointer flex items-center gap-0.5' onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-                    Back to top <ArrowUp className='mt-1' size={16}/>
+                <div className='md:min-w-[100px] text-white cursor-pointer flex items-center gap-0.5  ' onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+                    <p>Back to top</p><ArrowUp className=' mt-1' size={16}/>
                 </div>
             </div>
 
@@ -113,12 +113,14 @@ export const Footer = () => {
             <div className='h-px bg-white/40 '>
 
             </div>
-            <div className='flex justify-between items-center md:py-4 md:px-5 '>
+            <div className='flex flex-col md:justify-between items-center min-h-[100px] py-4 md:py-4 md:px-5 '>
 
-            <p className='font-inter font-normal text-[13px] text-white'>
+            <p className='font-inter font-normal text-[13px] text-[#888888]'>
                 © 2026 Falco Group Holding LTD. All rights reserved
             </p>
-            <p className='font-inter font-normal text-[13px] text-white'>Developed by <Link rel="nofollow" href="https://www.spiderworks.ae/" target="_blank">SpiderWorks.</Link></p>
+            <p className='font-inter font-normal text-[13px] text-[#888888]'>
+                Developed by <Link rel="nofollow" href="https://www.spiderworks.ae/" target="_blank">SpiderWorks.</Link>
+            </p>
             </div>
         </div>
         </>

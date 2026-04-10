@@ -30,7 +30,7 @@ export const SupportingCompanies = () => {
         }
     ]
     return (
-        <div className="bg-[#1A2532] max-w-full min-h-[717px]">
+        <div id="supporting-companies" className="bg-[#1A2532] max-w-full min-h-[717px]">
             <div className="py-[45px] px-5 md:p-[100px] flex flex-col">
                 <div>
                     <h3 className="support-companies ">

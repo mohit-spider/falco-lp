@@ -31,6 +31,12 @@ export const Banner = () => {
         { id: 3, img: bannerImgMob3 },
     ];
 
+    const scrollToSection = () => {
+  document.getElementById("supporting-companies")?.scrollIntoView({
+    behavior: "smooth",
+  });
+};
+
     const renderSwiper = (bannerData) => (
         <Swiper
             observer={true}
@@ -74,7 +80,7 @@ export const Banner = () => {
                                     A UAE technology group building digital infrastructure across MENA.
                                 </p>
                                 <div className="flex items-center gap-[10px]  lg:justify-end-safe md:pr-[162px] mt-[56px] md:mt-[135px]">
-                                    <button className="font-inter flex flex-row justify-center items-center gap-[13px] font-normal bg-[#1578DB] text-white text-[16px] min-w-[265px] md:min-w-[318px] min-h-[59px] py-[5px] rounded-[5px]">
+                                    <button className="font-inter flex flex-row justify-center items-center gap-[13px] font-normal bg-[#1578DB] text-white text-[16px] min-w-[265px] md:min-w-[318px] min-h-[59px] py-[5px] rounded-[5px]" onClick={scrollToSection}>
                                        Explore Group Companies
                                     <ArrowRight size={20} /> 
                                     </button>
