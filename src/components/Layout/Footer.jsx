@@ -4,6 +4,8 @@ import Image from 'next/image'
 import { ChevronDown, ChevronUp } from 'lucide-react';
 import Falcologo2 from '../../../public/assets/images/Falcologo2.svg'
 import linkedin from '../../../public/assets/images/linkedin.svg'
+import Link from 'next/link';
+import { ArrowUp } from 'lucide-react';
 
 export const Footer = () => {
     const [openSection, setOpenSection] = useState('Menu'); // Default open section, or null to close all
@@ -13,6 +15,7 @@ export const Footer = () => {
     };
 
     return (
+        <>
         <div className="p-[35px] w-full md:min-h-[400px] bg-[#161A24]">
             <div className='py-[25px] flex items   lg:flex-row flex-wrap justify-center lg:justify-around  gap-[40px] md:gap-[95px]'>
 
@@ -100,11 +103,24 @@ export const Footer = () => {
                         className='w-[24px] h-[24px]'
                     />
                 </div>
-                <div className='text-white cursor-pointer' onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-                    Back to top
+                <div className='text-white divide-amber-900 cursor-pointer flex items-center gap-0.5' onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+                    Back to top <ArrowUp className='mt-1' size={16}/>
                 </div>
             </div>
 
         </div>
+        <div className='w-full bg-[#161A24] '>
+            <div className='h-px bg-white/40 '>
+
+            </div>
+            <div className='flex justify-between items-center md:py-4 md:px-5 '>
+
+            <p className='font-inter font-normal text-[13px] text-white'>
+                © 2026 Falco Group Holding LTD. All rights reserved
+            </p>
+            <p className='font-inter font-normal text-[13px] text-white'>Developed by <Link rel="nofollow" href="https://www.spiderworks.ae/" target="_blank">SpiderWorks.</Link></p>
+            </div>
+        </div>
+        </>
     )
 }
