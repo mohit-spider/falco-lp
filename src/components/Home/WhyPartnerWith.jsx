@@ -41,7 +41,7 @@ export const WhyPartnerWith = () => {
                                     <Image
                                         src={Work}
                                         alt="Work Mobile"
-                                        fill
+                                        // fill
                                         className='object-cover rounded-[20px]'
                                     />
                                 </div>
@@ -82,7 +82,7 @@ export const WhyPartnerWith = () => {
                             <Image
                                 src={Work}
                                 alt="Work Desktop"
-                                fill
+                                // fill
                                 className='object-cover rounded-[20px]'
                             />
                         </div>

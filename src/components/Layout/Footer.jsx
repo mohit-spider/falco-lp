@@ -113,7 +113,7 @@ export const Footer = () => {
             <div className='h-px bg-white/40 '>
 
             </div>
-            <div className='flex flex-col md:justify-between items-center min-h-[100px] py-4 md:py-4 md:px-5 '>
+            <div className='flex flex-col md:flex-row md:justify-between items-center min-h-[100px] py-4 md:py-4 md:px-5 '>
 
             <p className='font-inter font-normal text-[13px] text-[#888888]'>
                 © 2026 Falco Group Holding LTD. All rights reserved
