@@ -83,8 +83,9 @@ export default function Neox() {
           <div>
             <p className='font-inter font-semibold text-[24px] text-[#3C3C3C] lg:text-white leading-none'>Solutions</p>
           </div>
-          {cardSection.map((item, index) => (
-            <div key={index} className='md:flex bg-[#F2F2F2] lg:flex-col  md:max-w-[275px] min-h-[311px] shadow-lg '>
+          <div className='md:flex md:flex-wrap  gap-5'>
+            {cardSection.map((item, index) => (
+            <div key={index} className='md:flex bg-[#F2F2F2] md:flex-col  md:max-w-[275px] min-h-[311px] shadow-lg '>
               <Image
                 src={item.img}
                 alt="cardDes"
@@ -96,6 +97,9 @@ export default function Neox() {
               </div>
             </div>
           ))}
+
+          </div>
+          
 
         </div>
       </section>
