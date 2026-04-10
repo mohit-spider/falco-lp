@@ -28,7 +28,7 @@ export const WhyPartnerWith = () => {
     return (
 
         <div className="bg-[#25364F] max-w-full min-h-fit py-12 md:py-20">
-            <div className='container'>
+            <div className='md:container'>
                 <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2  ">
                     <div>
                         <div className="px-6 py-8 md:p-[100px] ">

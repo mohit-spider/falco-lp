@@ -34,9 +34,9 @@ export default function Neox() {
   return (
     <div className="pt-[45px] max-w-full max-h-full px-[16px] lg:px-0">
       <section>
-        <div className="grid md:pl-[100px] md:grid-cols-2 md:pr-[122px]">
+        <div className="grid lg:pl-[100px] lg:grid-cols-2 md:pr-[122px]">
 
-          <div >
+          <div>
             <Image
               src={neox}
               alt="neox"
@@ -48,10 +48,10 @@ export default function Neox() {
             <Image
               src={future}
               alt="future"
-              className='lg:hidden w-[362px] h-[226px] rounded-[9px] object-cover'
+              className='lg:hidden w-[362px] h-[226px] md:w-[477px] md:h-[289px] rounded-[9px] object-cover'
             />
 
-            <div className='md:w-[477px] md:h-[116px] mt-[14px] md:mt-[92px]'>
+            <div className='md:w-[520px] md:h-[116px] lg:w-[477px] lg:h-[116px] mt-[14px] lg:mt-[92px]'>
               <p className='font-inter font-semibold text-[32px] md:text-[48px] text-[#3C3C3C] leading-[1.1] lg:leading-none '>Smart Networking,
                 Driving the future</p>
             </div>
