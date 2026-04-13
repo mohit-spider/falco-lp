@@ -1,4 +1,3 @@
-"use client";
 import { useState } from 'react';
 import Image from 'next/image'
 import { ChevronDown, ChevronUp } from 'lucide-react';
@@ -86,8 +85,8 @@ export const Footer = () => {
                     </div>
                     <ul className={`font-inter font-normal space-y-2 text-[14px] py-4 md:py-2 text-white leading-[30px] ${openSection === 'Contact' ? 'block' : 'hidden md:block'}`}>
                         <li>Addax Port Office Tower, Abu Dhabi</li>
-                        <li>info@falcogroup.ae</li>
-                        <li>Spiros Kotsomitis: +971 504850247D</li>
+                        <li > <Link href="mailto:info@falcogroup.ae">info@falcogroup.ae</Link></li>
+                        <li >Spiros Kotsomitis: <Link href="tel:+971504850247">+971 504850247</Link></li>
                     </ul>
                 </div>
 

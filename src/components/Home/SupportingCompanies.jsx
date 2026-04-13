@@ -57,14 +57,11 @@ export const SupportingCompanies = () => {
                                 <p className="font-roboto font-normal mt-[32px] text-white text-[16px]">
                                     {item.desc}
                                 </p>
-                                    <Link href={item.link}>
-                                <div className="flex items-center justify-between w-full">
-                                        <button className="cursor-pointer font-roboto font-normal bg-[#1578DB] hover:bg-[#1578DB]/80 mt-[32px] text-white text-[16px] w-full py-[5px] rounded-[5px]">
-                                            Know More
-                                        </button>
-
-                                </div>
+                                <div className="flex items-center justify-between w-full mt-[32px]">
+                                    <Link href={item.link} className="cursor-pointer font-roboto font-normal bg-[#1578DB] hover:bg-[#1578DB]/80 text-white text-[16px] w-full py-[5px] rounded-[5px] text-center">
+                                        Know More
                                     </Link>
+                                </div>
 
                             </div>
                         )

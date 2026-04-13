@@ -1,4 +1,4 @@
-import Image from "next/image"
+    import Image from "next/image"
 import falcoLogo from '../../../public/assets/images/falcoLogo.png'
 import option from '../../../public/assets/images/option.png'
 
@@ -13,6 +13,7 @@ export const Header = () => {
                         <Image
                             src={falcoLogo}
                             alt="logo"
+                            priority
                             className="w-[188px] h-[55px] md:w-[328px] md:h-[110px]"
                         />
                     </div>

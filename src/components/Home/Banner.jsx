@@ -1,5 +1,5 @@
-"use client";
 import Image from "next/image"
+import { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, EffectFade } from 'swiper/modules';
 import { ArrowRight } from 'lucide-react';
@@ -18,6 +18,12 @@ import bannerImgMob1 from '../../../public/assets/images/bannerImgMob3.png'
 
 
 export const Banner = () => {
+    const [isMounted, setIsMounted] = useState(false);
+
+    useEffect(() => {
+        setIsMounted(true);
+    }, []);
+
     const banners = [
         { id: 1, img: bannerImg1 },
         { id: 2, img: bannerImg2 },
@@ -63,8 +69,11 @@ export const Banner = () => {
                             src={item.img}
                             alt="banner"
                             fill
+                            sizes="100vw"
+                            // height={1080}
+                            // width={1920}
                             priority
-                            className="object-cover object-center"
+                            className=" object-center"
                         />
                     </div>
 
@@ -98,12 +107,12 @@ export const Banner = () => {
         <section className="relative h-screen w-full overflow-hidden">
             {/* Desktop Banner */}
             <div className="hidden md:block h-full w-full">
-                {renderSwiper(banners)}
+                {isMounted && renderSwiper(banners)}
             </div>
 
             {/* Mobile Banner */}
             <div className="block md:hidden h-full w-full">
-                {renderSwiper(bannersMob)}
+                {isMounted && renderSwiper(bannersMob)}
             </div>
 
             {/* Custom styles for right-side pagination */}

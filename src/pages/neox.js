@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import neox from '../../public/assets/images/neox.svg'
+import neoxLogo from '../../public/assets/images/neoxLogo.png'
 import future from '../../public/assets/images/future.png'
 
 import corridor from '../../public/assets/images/corridor.jpg'
@@ -38,11 +38,11 @@ export default function Neox() {
 
           <div>
             <Image
-              src={neox}
+              src={neoxLogo}
               alt="neox"
               className='w-[135px] h-[57px] md:w-[162px] md:h-[86px] object-cover'
-            // width={100}
-            // height={100}
+             width={600}
+             height={600}
             />
 
             <Image
