@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Image from 'next/image'
 import { ChevronDown, ChevronUp } from 'lucide-react';
-import Falcologo2 from '../../../public/assets/images/Falcologo2.svg'
+import Falcologo2 from '../../../public/assets/images/Falco-Icon.png'
 import linkedin from '../../../public/assets/images/linkedin.svg'
 import Link from 'next/link';
 import { ArrowUp } from 'lucide-react';

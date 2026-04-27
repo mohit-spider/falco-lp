@@ -1,5 +1,5 @@
     import Image from "next/image"
-import falcoLogo from '../../../public/assets/images/falcoLogo.png'
+import falcoLogo from '../../../public/assets/images/falco-full-logo-white-text.png'
 import option from '../../../public/assets/images/option.png'
 
 export const Header = () => {
@@ -14,16 +14,16 @@ export const Header = () => {
                             src={falcoLogo}
                             alt="logo"
                             priority
-                            className="w-[188px] h-[55px] md:w-[328px] md:h-[110px]"
+                            className="w-[188px] md:w-[300px] "
                         />
                     </div>
-                    <div className="md:mr-[40px]">
+                    {/* <div className="md:mr-[40px]">
                         <Image
                             src={option}
                             alt="logo"
-                            className="w-[29px] h-[29px] md:w-[36px] md:h-[36px]"
+                            className="w-[29px] md:w-[36px] "
                         />
-                    </div>              
+                    </div>               */}
             </div>
         </header>
 

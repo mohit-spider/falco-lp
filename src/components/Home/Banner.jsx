@@ -38,10 +38,10 @@ export const Banner = () => {
     ];
 
     const scrollToSection = () => {
-  document.getElementById("supporting-companies")?.scrollIntoView({
-    behavior: "smooth",
-  });
-};
+        document.getElementById("supporting-companies")?.scrollIntoView({
+            behavior: "smooth",
+        });
+    };
 
     const renderSwiper = (bannerData) => (
         <Swiper
@@ -79,7 +79,7 @@ export const Banner = () => {
 
                     {/* Overlay Content */}
                     <div className="relative inset-0 z-10 h-full flex items-center bg-black/10">
-                        <div className="pl-[20px] lg:pl-[98px] md:pt-[150px] ">
+                        <div className="pl-[20px] lg:pl-[98px] md:pt-[220px] ">
                             <div className="max-w-full ">
                                 <h1 className="font-inter font-semibold md:font-medium  text-[32px] flex text-start md:text-[50px] leading-[109%] md:leading-[1.1] text-white">
                                     Building Scalable Ventures Across
@@ -88,12 +88,12 @@ export const Banner = () => {
                                 <p className="mt-[32px] font-inter  text-[13px] md:text-[24px] font-normal md:font-medium text-white ">
                                     A UAE technology group building digital infrastructure across MENA.
                                 </p>
-                                <div className="flex items-center gap-[10px]  lg:justify-end-safe md:pr-[162px] mt-[56px] md:mt-[135px]">
+                                <div className="flex items-center gap-[10px]  lg:justify-end-safe md:pr-[162px] mt-[56px] md:mt-[60px]">
                                     <button className="font-inter flex flex-row justify-center items-center gap-[13px] font-normal bg-[#1578DB] text-white text-[16px] min-w-[265px] md:min-w-[318px] min-h-[59px] py-[5px] rounded-[5px]" onClick={scrollToSection}>
-                                       Explore Group Companies
-                                    <ArrowRight size={20} /> 
+                                        Explore Group Companies
+                                        <ArrowRight size={20} />
                                     </button>
-                                   
+
                                 </div>
                             </div>
                         </div>

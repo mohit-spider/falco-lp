@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import neoxLogo from '../../public/assets/images/neoxLogo.png'
 import future from '../../public/assets/images/future.png'
 
@@ -33,6 +34,12 @@ export default function Neox() {
   ]
   return (
     <div className="pt-[45px] max-w-full max-h-full px-[16px] lg:px-0">
+      <div className="lg:pl-[100px] mb-[20px] md:mb-[30px]">
+        <Link href="/#supporting-companies" className="inline-flex items-center text-black font-inter font-medium text-[16px] transition-colors">
+          <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+          Back to subsidiaries
+        </Link>
+      </div>
       <section>
         <div className="grid lg:pl-[100px] lg:grid-cols-2 md:pr-[122px]">
 
@@ -59,8 +66,7 @@ export default function Neox() {
               <p className='font-inter font-medium md:font-semibold text-[16px]  text-[#666565] md:text-[#4A4A4A]'>Neox delivers innnovative networking equipment and solutions for the telecommunications and data center scetors across the MENA, GCC an APAC regions.</p>
             </div>
             <div className='mt-[30px] md:mt-[48px] '>
-              <button className='bg-[#1578DB] text-white rounded-[4px] w-[158px] h-[46px]'>Visit Website</button>
-            </div>
+              <a href="https://www.neoxfzco.ae" target="_blank" rel="noopener noreferrer" className='bg-[#1578DB] text-white rounded-[4px] w-[158px] h-[46px] flex items-center justify-center'>Visit Website</a></div>
           </div>
 
           <div className='relative subsidiaries-img-block md:mt-[121px] z-10'>
@@ -85,13 +91,13 @@ export default function Neox() {
           </div>
           <div className='md:flex md:flex-wrap  gap-5'>
             {cardSection.map((item, index) => (
-            <div key={index} className='md:flex bg-[#F2F2F2] md:flex-col  md:max-w-[275px] min-h-[311px] shadow-lg '>
+            <div key={index} className='md:flex bg-[#F2F2F2] md:flex-col  md:max-w-[275px] min-h-[340px] shadow-lg '>
               <Image
                 src={item.img}
                 alt="cardDes"
                 className='w-[360px] h-[168px] md:w-[275px] md:h-[166px] rounded-t-lg object-cover'
               />
-              <div className='px-[20px] pt-[11px]'>
+              <div className='px-[20px] pt-[11px] pb-[25px]'>
               <p className='font-inter font-medium text-[16px] text-[#5B5B5B] leading-none'>{item.title}</p>
               <p className='font-inter font-medium text-[15px] text-[#767474] mt-[12px] leading-none'>{item.desc}</p>
               </div>
@@ -109,7 +115,8 @@ export default function Neox() {
         <div className='px-[40px] md:px-[100px] pb-[31px]'>
           <div className='md:flex md:justify-between items-center gap-y-1'>
             <p className='font-inter font-medium text-[#878787] text-[15px] text-center'>S 60517 Jebel Ali Free Zone, Dubai, United Arab Emirates</p>
-            <p className='font-inter font-medium text-[#878787] text-[15px] text-center mt-4 md:mt-0'>TEL: +971-4-257-8498</p>
+            <p className='font-inter font-medium text-[#878787] text-[15px] text-center mt-4 md:mt-0'><a href="mailto:contact@neoxfzco.ae">contact@neoxfzco.ae</a></p>
+            <p className='font-inter font-medium text-[#878787] text-[15px] text-center mt-4 md:mt-0'><a href="tel:+97142578498">TEL: +971-4-257-8498</a></p>
           </div>
         </div>
       </section>
