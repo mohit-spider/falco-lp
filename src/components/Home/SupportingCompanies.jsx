@@ -35,12 +35,13 @@ export const SupportingCompanies = () => {
         {
             title: 'FalcoWH',
             short_title: 'AI-Driven Data Center Solutions',
-            desc: 'Specialized facility and infrastructure management in JAFZA, supporting advanced manufacturing operations and upcoming data center and electronics production expansions.',
+            desc: 'Specialized JAFZA facility management supporting advanced manufacturing and tech expansions.',
             icon: building,
             link: '/falco-wh'
         },
         {
-            title: `Evollabs Tech`,
+            title: `Evollabs Tech 
+            SA`,
             short_title: 'Software-Defined Infrastructure',
             desc: `Develops integrated hardware and software capabilities that support scalable, software-defined infrastructure solutions.`,
             icon: chip,

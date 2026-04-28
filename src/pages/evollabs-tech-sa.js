@@ -86,40 +86,15 @@ export default function Neox() {
 
             </section>
 
-            <section className='mt-[38px] md:mt-[72px] mb-[30px] md:mb-[52px]'>
-                <div className='subsidiaries-cards relative flex flex-col lg:flex lg:flex-row lg:flex-wrap lg:justify-evenly gap-5 lg:items-center max-w-full max-h-full'>
-                    <div>
-                        <p className='font-inter font-semibold text-[24px] text-[#3C3C3C] lg:text-white leading-none'>Solutions</p>
-                    </div>
-                    <div className='md:flex md:flex-wrap  gap-5'>
-                        {cardSection.map((item, index) => (
-                            <div key={index} className='md:flex bg-[#F2F2F2] md:flex-col  md:max-w-[275px] min-h-[340px] shadow-lg '>
-                                <Image
-                                    src={item.img}
-                                    alt="cardDes"
-                                    className='w-[360px] h-[168px] md:w-[275px] md:h-[166px] rounded-t-lg object-cover'
-                                />
-                                <div className='px-[20px] pt-[11px] pb-[25px]'>
-                                    <p className='font-inter font-medium text-[16px] text-[#5B5B5B] leading-none'>{item.title}</p>
-                                    <p className='font-inter font-medium text-[15px] text-[#767474] mt-[12px] leading-none'>{item.desc}</p>
-                                </div>
-                            </div>
-                        ))}
-
-                    </div>
-
-
-                </div>
-            </section>
+            
 
             <section className='max-h-[155px]'>
                 <hr className="border-t border-gray-300 my-6" />
                 <div className='px-[40px] md:px-[100px] pb-[31px]'>
                     <div className='md:flex md:justify-between items-center gap-y-1'>
-                        <p className='font-inter font-medium text-[#878787] text-[15px] text-center'>Building 5, office G18, Dubai Internet City, UAE
-                        </p>
+                        <p className='font-inter font-medium text-[#878787] text-[15px] text-center'> 64B Kifisias Avenue, Athens 15125, Greece</p>
                         <p className='font-inter font-medium text-[#878787] text-[15px] text-center'><a href='mailto:info@evolabs.tech'>info@evollabs.tech</a></p>
-                        <p className='font-inter font-medium text-[#878787] text-[15px] text-center mt-4 md:mt-0'><a href="tel:+97145299011">TEL: +971-4-529 9011</a></p>
+                        <p className='font-inter font-medium text-[#878787] text-[15px] text-center mt-4 md:mt-0'><a href="tel:+306977344918">+30 6977 344918</a></p>
                     </div>
                 </div>
             </section>
