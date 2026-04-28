@@ -63,7 +63,7 @@ export default function Neox() {
                 Driving the future</p>
             </div>
             <div className='w-[357px] h-[75px] md:w-[420px] md:h-[56px] mt-[12px] md:mt-[16px]'>
-              <p className='font-inter font-medium md:font-semibold text-[16px]  text-[#666565] md:text-[#4A4A4A]'>Neox delivers innnovative networking equipment and solutions for the telecommunications and data center scetors across the MENA, GCC an APAC regions.</p>
+              <p className='font-inter font-medium md:font-semibold text-[16px]  text-[#666565] md:text-[#4A4A4A]'>NeoX delivers innnovative networking equipment and solutions for the telecommunications and data center scetors across the MENA, GCC and APAC regions.</p>
             </div>
             <div className='mt-[30px] md:mt-[48px] '>
               <a href="https://www.neoxfzco.ae" target="_blank" rel="noopener noreferrer" className='bg-[#1578DB] text-white rounded-[4px] w-[158px] h-[46px] flex items-center justify-center'>Visit Website</a></div>
