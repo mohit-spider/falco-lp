@@ -61,10 +61,10 @@ export default function Neox() {
                         />
 
                         <div className='md:w-[520px] md:h-auto lg:w-[477px] lg:h-auto mt-[14px] lg:mt-[92px]'>
-                            <p className='font-inter font-semibold text-[32px] md:text-[48px] text-[#3C3C3C] leading-[1.1] lg:leading-none '>Turning ideas into digital experiences </p>
+                            <p className='font-inter font-semibold text-[32px] md:text-[48px] text-[#3C3C3C] leading-[1.1] lg:leading-none '>Transforming ideas into intelligent digital ecosystems </p>
                         </div>
                         <div className='w-[357px] h-auto md:w-[420px] md:h-auto mt-[12px] md:mt-[30px]'>
-                            <p className='font-inter font-medium md:font-semibold text-[16px]  text-[#666565] md:text-[#4A4A4A]'>Evollabs Tech is a next-generation technology company focused on creating powerful AI chips, smart networking platforms, and intelligent automation solutions for the future.</p>
+                            <p className='font-inter font-medium md:font-semibold text-[16px]  text-[#666565] md:text-[#4A4A4A]'>Evollabs Tech SA is a forward-thinking technology company dedicated to building advanced AI chips, next-gen networking infrastructure, and smart automation systems that power the future of connected innovation.</p>
                         </div>
                         <div className='mt-[30px] md:mt-[55px] '>
                             <a href="https://www.evollabs.tech" target="_blank" rel="noopener noreferrer" className='bg-[#1578DB] text-white rounded-[4px] w-[158px] h-[46px] flex items-center justify-center'>Visit Website</a>

@@ -40,13 +40,12 @@ export const SupportingCompanies = () => {
             link: '/falco-wh'
         },
         {
-            title: `Evollabs Tech 
-            SA`,
-            short_title: 'Software-Defined Infrastructure',
-            desc: `Develops integrated hardware and software capabilities that support scalable, software-defined infrastructure solutions.`,
-            icon: chip,
-            link: '/evollabs-tech-sa'
-        }
+    title: `Evollabs Tech SA`,
+    short_title: 'AI Infrastructure & Smart Systems',
+    desc: `Focused on building regionally optimized AI infrastructure, smart networking systems, and automation solutions to accelerate digital transformation at scale.`,
+    icon: chip,
+    link: '/evollabs-tech-sa'
+}
     ]
 
     return (
