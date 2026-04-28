@@ -49,7 +49,7 @@ export const WhyPartnerWith = () => {
                             <div className='md:max-w-[456px]'>
                                 <p className="text-white font-roboto font-normal md:text-[16px] mt-8 ">
                                     We combine regional expertise with global innovation to deliver
-                                    secure, scalable,and sustainable solutions.Our integrated
+                                    secure, scalable,and sustainable solutions. Our integrated
                                     ecosystem ensures end-to-end efficiency for high-value assets.
                                 </p>
 
