@@ -13,6 +13,12 @@ export const Footer = () => {
         setOpenSection(openSection === section ? null : section);
     };
 
+    const scrollToSection = () => {
+        document.getElementById("supporting-companies")?.scrollIntoView({
+            behavior: "smooth",
+        });
+    };
+
     return (
         <>
         <div className="p-[35px] w-full md:min-h-[400px] bg-[#161A24]">
@@ -46,9 +52,9 @@ export const Footer = () => {
                         </div>
                     </div>
                     <ul className={`font-inter font-normal space-y-2 text-[14px] py-4 md:py-2 text-white leading-[30px] ${openSection === 'Menu' ? 'block' : 'hidden md:block'}`}>
-                        <li>About Us</li>
-                        <li>Subsidiaries</li>
-                        <li>Partner With Us</li>
+                        {/* <li>About Us</li> */}
+                        <li><button className='cursor-pointer' onClick={scrollToSection}>Subsidiaries</button></li>
+                        {/* <li>Partner With Us</li> */}
                     </ul>
                 </div>
 
@@ -65,8 +71,8 @@ export const Footer = () => {
                         </div>
                     </div>
                     <ul className={`font-inter font-normal space-y-2 text-[14px] py-4 md:py-2 text-white leading-[30px] ${openSection === 'Legal' ? 'block' : 'hidden md:block'}`}>
-                        <li>Privacy Policy</li>
-                        <li>Terms & Conditions</li>
+                        {/* <li>Privacy Policy</li>
+                        <li>Terms & Conditions</li> */}
                         <li>Copyright 2026 Falco Group Holding LTD</li>
                     </ul>
                 </div>

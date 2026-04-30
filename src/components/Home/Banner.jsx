@@ -20,6 +20,7 @@ import bannerImgMob1 from '../../../public/assets/images/bannerImgMob1.jpg'
 
 
 export const Banner = () => {
+    
     const [isMounted, setIsMounted] = useState(false);
 
     useEffect(() => {
