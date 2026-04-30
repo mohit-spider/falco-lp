@@ -11,8 +11,8 @@ import fiveGMobileBackhaul from '../../public/assets/images/five-g-mobile-backha
 
 export default function Neox() {
 
-    
-  return (
+
+    return (
         <div className="pt-[45px] max-w-full max-h-full px-[16px] lg:px-0">
             <div className="lg:pl-[100px] mb-[20px] md:mb-[30px]">
                 <Link href="/#supporting-companies" className="inline-flex items-center text-black font-inter font-medium text-[16px] transition-colors">
@@ -40,12 +40,12 @@ export default function Neox() {
 
                         <div className='md:w-[520px] md:h-auto lg:w-[477px] lg:h-auto mt-[14px] lg:mt-[92px]'>
                             <p className='font-inter font-semibold text-[32px] md:text-[48px] text-[#3C3C3C] leading-[1.1] lg:leading-none '>Integrated Infrastructure & Operational Excellence
-</p>
+                            </p>
                         </div>
                         <div className='w-[357px] h-auto md:w-[420px] md:h-auto mt-[12px] md:mt-[30px]'>
                             <p className='font-inter font-medium md:font-semibold text-[16px]  text-[#666565] md:text-[#4A4A4A]'>FalcoWH delivers end-to-end facility services, including preventive maintenance, fit-outs, infrastructure upgrades, and sustainability initiatives, ensuring efficient and reliable operations for high-value assets.
 
-Backed by Falco Group Holding LTD, the company leverages shared IT, manufacturing, and infrastructure capabilities to provide scalable, cost-effective, and resilient solutions. This integrated approach supports current operations while enabling future expansions, including data centers and electronics manufacturing facilities.</p></div>
+                                Backed by Falco Group Holding LTD, the company leverages shared IT, manufacturing, and infrastructure capabilities to provide scalable, cost-effective, and resilient solutions. This integrated approach supports current operations while enabling future expansions, including data centers and electronics manufacturing facilities.</p></div>
                         {/* <div className='mt-[30px] md:mt-[55px] '>
                             <button className='bg-[#1578DB] text-white rounded-[4px] w-[158px] h-[46px]'>Visit Website</button>
                         </div> */}
@@ -89,7 +89,7 @@ Backed by Falco Group Holding LTD, the company leverages shared IT, manufacturin
                         <p className='font-inter font-medium text-[#878787] text-[15px] text-center'>Property S60517, Jebel Ali Free Zone, Dubai, UAE</p>
                         <p className='font-inter font-medium text-[#878787] text-[15px] text-center'><a href="mailto:contact@falcowh">contact@falcowh.ae</a></p>
                         <p className='font-inter font-medium text-[#878787] text-[15px] text-center mt-4 md:mt-0'>TEL: <a href="tel:+97143495359">+971-4-349-5359</a></p>
-                   
+
                     </div>
                 </div>
             </section>
