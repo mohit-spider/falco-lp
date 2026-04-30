@@ -1,4 +1,40 @@
+.swiper-pagination {
+  right: 60px !important;
+  left: auto !important;
+  top: 60% !important;
+  transform: translateY(-50%) !important;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: auto !important;
+}
 
+.custom-bullet {
+  width: 4px !important;
+  height: 4px !important;
+  background: white !important;
+  opacity: 0.5 !important;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 0 !important;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1 !important;
+  background: #fff !important;
+  transform: scale(1.4);
+}
+
+.swiper-slide-active {
+  z-index: 1;
+}
+
+@media (max-width: 767px) {
+  .swiper-pagination {
+    display: none !important;
+  }
+}
 
 
 .support-companies{

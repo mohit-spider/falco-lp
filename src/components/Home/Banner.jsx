@@ -9,8 +9,10 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
 
+
 import bannerImg1 from '../../../public/assets/images/bannerImg1.png'
 import bannerImg2 from '../../../public/assets/images/bannerImg2.png'
+import bannerImg3 from '../../../public/assets/images/bannerImg3.png'
 import bannerImgMob3 from '../../../public/assets/images/bannerImgMob1.jpg'
 import bannerImgMob2 from '../../../public/assets/images/bannerImgMob2.jpg'
 import bannerImgMob1 from '../../../public/assets/images/bannerImgMob3.png'
@@ -27,8 +29,7 @@ export const Banner = () => {
     const banners = [
         { id: 1, img: bannerImg1 },
         { id: 2, img: bannerImg2 },
-        { id: 3, img: bannerImg2 },
-        { id: 4, img: bannerImg2 },
+        { id: 3, img: bannerImg3 },
     ];
 
     const bannersMob = [
@@ -115,48 +116,7 @@ export const Banner = () => {
                 {isMounted && renderSwiper(bannersMob)}
             </div>
 
-            {/* Custom styles for right-side pagination */}
-            <style jsx global>{`
-                .swiper-pagination {
-                    right: 60px !important;
-                    left: auto !important;
-                    top: 60% !important;
-                    transform: translateY(-50%) !important;
-                    display: flex;
-                    flex-direction: column;
-                    gap: 24px;
-                    width: auto !important;
-
-                }
-                .custom-bullet {
-                    width: 4px !important;
-                    height: 4px !important;
-                    background: white !important;
-                    opacity: 0.5 !important;
-                    border-radius: 50%;
-                    cursor: pointer;
-                    transition: all 0.3s ease;
-                    margin: 0 !important;
-                    
-                }
-                .swiper-pagination-bullet-active {
-                    opacity: 1 !important;
-                    background: #fff !important; /* Amber-400 for active state to match dots in image */
-                    transform: scale(1.4);
-
-                }
-                /* Swiper Fade Effect fix for z-index */
-                .swiper-slide-active {
-                    z-index: 1;
-                }
-
-                /* Hide pagination on mobile */
-                @media (max-width: 767px) {
-                    .swiper-pagination {
-                        display: none !important;
-                    }
-                }
-            `}</style>
+          
         </section>
     )
 }
