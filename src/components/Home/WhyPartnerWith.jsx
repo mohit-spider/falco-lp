@@ -27,69 +27,77 @@ export const WhyPartnerWith = () => {
     ]
     return (
 
-        <div className="bg-[#25364F] max-w-full min-h-fit py-12 md:py-20">
-            <div className='md:container'>
-                <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2  ">
-                    <div>
-                        <div className="px-6 py-8 md:p-[100px] ">
-                            <h3 className="text-[#A1E0FF] font-roboto font-bold text-3xl md:text-[40px] leading-[1.1]">
-                                Why Partner With <span className="text-white font-extrabold text-4xl md:text-[48px] block mt-2 md:inline md:mt-0">Falco Group?</span>
-                            </h3>
+       <div className="bg-[#25364F] max-w-full min-h-fit py-12 md:py-16 lg:py-20">
+            <div className="md:container mx-auto">
+                <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10">
 
-                            <div className="lg:hidden mt-8">
-                                <div className="relative w-full h-[300px] max-w-[710px]">
-                                    <Image
-                                        src={Work}
-                                        alt="Work Mobile"
-                                        // fill
-                                        className='object-cover rounded-[20px]'
-                                    />
-                                </div>
-                            </div>
-                            <div className='md:max-w-[456px]'>
-                                <p className="text-white font-roboto font-normal md:text-[16px] mt-8 ">
-                                    We combine regional expertise with global innovation to deliver
-                                    secure, scalable,and sustainable solutions. Our integrated
-                                    ecosystem ensures end-to-end efficiency for high-value assets.
-                                </p>
+                    {/* LEFT SECTION */}
+                    <div className="px-6 md:px-12 lg:p-[100px]">
 
-                            </div>
+                        <h3 className="text-[#A1E0FF] font-roboto font-bold text-3xl md:text-4xl lg:text-[40px] leading-[1.1]">
+                            Why Partner With{" "}
+                            <span className="text-white font-extrabold block md:inline mt-2 md:mt-0">
+                                Falco Group?
+                            </span>
+                        </h3>
 
-                            <div className="grid grid-cols-2 gap-x-[8px] gap-y-[18px] md:gap-x-[32px] md:gap-y-[32px] mt-8">
-                                {cards.map((item, index) => {
-                                    return (
-                                        <div key={index} className="w-full min-h-[103px] py-4 bg-[#0B0B0B] flex flex-col items-center justify-center rounded-lg">
-                                            <Image
-                                                src={item.icon}
-                                                alt="icon"
-                                                width={30}
-                                                height={30}
-                                                className=" w-[30px] h-[30px]"
-                                            />
-                                            <h3 className="font-roboto mt-[22px] text-[16px] text-white">
-                                                {item.title}
-                                            </h3>
-                                        </div>
-                                    )
-                                })}
-                                <div>
-
-                                </div>
+                        {/* Mobile Image */}
+                        <div className="lg:hidden mt-8">
+                            <div className="relative w-full aspect-[710/471]">
+                                <Image
+                                    src={Work}
+                                    alt="Work"
+                                    fill
+                                    className="object-cover rounded-[20px]"
+                                    sizes="100vw"
+                                />
                             </div>
                         </div>
+
+                        {/* Paragraph */}
+                        <div className="mt-6 lg:max-w-[456px]">
+                            <p className="text-white font-roboto font-normal text-sm md:text-[15px] lg:text-[16px] leading-relaxed">
+                                We combine regional expertise with global innovation to deliver
+                                secure, scalable, and sustainable solutions. Our integrated
+                                ecosystem ensures end-to-end efficiency for high-value assets.
+                            </p>
+                        </div>
+
+                        {/* Cards */}
+                        <div className="grid grid-cols-2 gap-3 md:gap-6 lg:gap-8 mt-8">
+                            {cards.map((item, index) => (
+                                <div
+                                    key={index}
+                                    className="w-full min-h-[103px] py-4 bg-[#0B0B0B] flex flex-col items-center justify-center rounded-lg"
+                                >
+                                    <Image
+                                        src={item.icon}
+                                        alt={item.title}
+                                        width={30}
+                                        height={30}
+                                        className="w-[30px] h-[30px]"
+                                    />
+                                    <h3 className="font-roboto mt-4 text-[14px] md:text-[15px] lg:text-[16px] text-white text-center">
+                                        {item.title}
+                                    </h3>
+                                </div>
+                            ))}
+                        </div>
                     </div>
-                    {/* Desktop view image */}
-                    <div className='hidden lg:block mt-[100px] px-6 md:px-0'>
-                        <div className="relative w-full h-[471px] max-w-[710px]">
+
+                    {/* DESKTOP IMAGE */}
+                    <div className="hidden lg:block px-6 lg:px-0">
+                        <div className="relative w-full max-w-[710px] aspect-[710/471] mx-auto">
                             <Image
                                 src={Work}
-                                alt="Work Desktop"
-                                width={710}
-                                height={471}
-                                className='object-cover rounded-[20px]'
+                                alt="Work"
+                                fill
+                                className="object-cover rounded-[20px]"
+                                sizes="710px"
                             />
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
