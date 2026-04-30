@@ -3,12 +3,9 @@ const nextConfig = {
   reactCompiler: true,
   reactStrictMode: true,
 
+  output: 'export', 
   images: {
-    localPatterns: [
-      {
-      pathname: '/**',   // Allows everything under root (including /_next/static/media/**)
-    },
-    ],
+    unoptimized: true, 
   },
 };
 
