@@ -46,9 +46,9 @@ export default function Neox() {
                             <p className='font-inter font-medium md:font-semibold text-[16px]  text-[#666565] md:text-[#4A4A4A]'>FalcoWH delivers end-to-end facility services, including preventive maintenance, fit-outs, infrastructure upgrades, and sustainability initiatives, ensuring efficient and reliable operations for high-value assets.
 
 Backed by Falco Group Holding LTD, the company leverages shared IT, manufacturing, and infrastructure capabilities to provide scalable, cost-effective, and resilient solutions. This integrated approach supports current operations while enabling future expansions, including data centers and electronics manufacturing facilities.</p></div>
-                        <div className='mt-[30px] md:mt-[55px] '>
+                        {/* <div className='mt-[30px] md:mt-[55px] '>
                             <button className='bg-[#1578DB] text-white rounded-[4px] w-[158px] h-[46px]'>Visit Website</button>
-                        </div>
+                        </div> */}
                     </div>
 
                     <div className='relative subsidiaries-img-block md:mt-[121px] z-10'>

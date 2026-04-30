@@ -55,7 +55,7 @@ export const SupportingCompanies = () => {
         >
             <div className="px-5 md:px-12 lg:px-[100px]">
 
-                {/* Heading */}
+                
                 <h3 className="text-white font-roboto font-semibold text-2xl md:text-3xl lg:text-4xl leading-tight">
                     A portfolio of Companies Supporting <br className="hidden md:block" />
                     Innovation Across{" "}
@@ -64,7 +64,7 @@ export const SupportingCompanies = () => {
                     </span>
                 </h3>
 
-                {/* Swiper */}
+                
                 <div className="mt-12 md:mt-16 w-full">
                     {isMounted && (
                         <Swiper
@@ -90,7 +90,7 @@ export const SupportingCompanies = () => {
                                     spaceBetween: 30,
                                 },
                             }}
-                            className="!pb-14"
+                            className="pb-14!"
                         >
                             {cards.map((item, index) => (
                                 <SwiperSlide key={index} className="h-auto">
