@@ -58,7 +58,7 @@ export const Footer = () => {
                     </ul>
                 </div>
 
-                <div className='flex flex-col items-baseline justify-start w-full md:w-auto border-b border-gray-700 md:border-none pb-4 md:pb-0'>
+                {/* <div className='flex flex-col items-baseline justify-start w-full md:w-auto border-b border-gray-700 md:border-none pb-4 md:pb-0'>
                     <div 
                         className='flex justify-between w-full cursor-pointer md:cursor-default' 
                         onClick={() => toggleSection('Legal')}
@@ -71,11 +71,11 @@ export const Footer = () => {
                         </div>
                     </div>
                     <ul className={`font-inter font-normal space-y-2 text-[14px] py-4 md:py-2 text-white leading-[30px] ${openSection === 'Legal' ? 'block' : 'hidden md:block'}`}>
-                        {/* <li>Privacy Policy</li>
-                        <li>Terms & Conditions</li> */}
+                        <li>Privacy Policy</li>
+                        <li>Terms & Conditions</li>
                         <li>Copyright 2026 Falco Group Holding LTD</li>
                     </ul>
-                </div>
+                </div> */}
                 
                 <div className='flex flex-col items-baseline justify-start w-full md:w-auto border-b border-gray-700 md:border-none pb-4 md:pb-0'>
                     <div 
@@ -99,14 +99,14 @@ export const Footer = () => {
             </div>
             <div className='flex flex-col md:flex-row justify-between items-center px-0 md:px-[35px] mt-8 md:mt-0 gap-4 md:gap-0'>
                 <div className='flex gap-2 items-center'>
-                    <p className='font-inter font-light text-[14px] text-white'>
+                    {/* <p className='font-inter font-light text-[14px] text-white'>
                         Follow Us on:
                     </p>
                     <Image
                         src={linkedin}
                         alt="linkedin"
                         className='w-[24px] h-[24px]'
-                    />
+                    /> */}
                 </div>
                 <div className='md:min-w-[100px] text-white cursor-pointer flex items-center gap-0.5  ' onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                     <p>Back to top</p><ArrowUp className=' mt-1' size={16}/>

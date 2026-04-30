@@ -40,6 +40,8 @@ export const WhoAreWe = () => {
                         <Image
                             src={item.icon}
                             alt="icon"
+                            width={32}
+                            height={32}
                             className="w-[32px] h-[32px]"
                         />
                         <h3 className="font-roboto font-medium mt-[16px] md:mt-[22px] text-[18px] md:text-[32px] leading-[1.1] text-white">
