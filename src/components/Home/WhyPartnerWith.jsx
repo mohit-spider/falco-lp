@@ -2,7 +2,7 @@ import list from '../../../public/assets/images/list.svg'
 import wind from '../../../public/assets/images/wind.svg'
 import map from '../../../public/assets/images/map.svg'
 import cloud from '../../../public/assets/images/cloud.svg'
-import Work from '../../../public/assets/images/Work.jpg'
+import Work from '../../../public/assets/images/Work.webp'
 import Image from 'next/image'
 
 export const WhyPartnerWith = () => {
@@ -62,6 +62,8 @@ export const WhyPartnerWith = () => {
                                             <Image
                                                 src={item.icon}
                                                 alt="icon"
+                                                width={30}
+                                                height={30}
                                                 className=" w-[30px] h-[30px]"
                                             />
                                             <h3 className="font-roboto mt-[22px] text-[16px] text-white">
@@ -82,7 +84,8 @@ export const WhyPartnerWith = () => {
                             <Image
                                 src={Work}
                                 alt="Work Desktop"
-                                // fill
+                                width={710}
+                                height={471}
                                 className='object-cover rounded-[20px]'
                             />
                         </div>

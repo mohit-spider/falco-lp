@@ -87,6 +87,8 @@ export const SupportingCompanies = () => {
                                             <Image
                                                 src={item.icon}
                                                 alt="icon"
+                                                width={35}
+                                                height={35}
                                                 className="absolute top-12 right-12 w-[35px] h-[35px]"
                                             />
                                             <h3 className="font-roboto font-bold mt-[15px] text-[26px] leading-[1.1] text-white whitespace-pre-line ">

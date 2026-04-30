@@ -10,12 +10,12 @@ import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
 
 
-import bannerImg1 from '../../../public/assets/images/bannerImg1.png'
-import bannerImg2 from '../../../public/assets/images/bannerImg2.png'
-import bannerImg3 from '../../../public/assets/images/bannerImg3.png'
-import bannerImgMob3 from '../../../public/assets/images/bannerImgMob1.jpg'
+import bannerImg1 from '../../../public/assets/images/bannerImg1.webp'
+import bannerImg2 from '../../../public/assets/images/bannerImg2.webp'
+import bannerImg3 from '../../../public/assets/images/bannerImg3.webp'
+import bannerImgMob3 from '../../../public/assets/images/bannerImgMob3.png'
 import bannerImgMob2 from '../../../public/assets/images/bannerImgMob2.jpg'
-import bannerImgMob1 from '../../../public/assets/images/bannerImgMob3.png'
+import bannerImgMob1 from '../../../public/assets/images/bannerImgMob1.jpg'
 
 
 
