@@ -14,12 +14,12 @@ export default function Home() {
 
     <div className="relative">
       <div className="absolute z-10 hidden lg:block lg:w-[1.5px] lg:h-[567px] bg-white/30 top-[33.5%] bottom-[10%] lg:right-[50px]"></div>
-      <div className="absolute z-15 hidden lg:block bg-[#E4E3E3] lg:w-[34px] lg:h-[5px] top-[34.6%] bottom-[10%] lg:right-[33px]"></div>   
-      <div className="absolute z-15 hidden lg:block bg-[#E4E3E3] lg:h-[34px] lg:w-[5px] top-[34.1%] bottom-[10%] lg:right-[48px]"></div>   
+      <div className="absolute z-15 hidden lg:block bg-[#E4E3E3] lg:w-[34px] lg:h-[5px] top-[35.9%] bottom-[10%] lg:right-[33px]"></div>   
+      <div className="absolute z-15 hidden lg:block bg-[#E4E3E3] lg:h-[34px] lg:w-[5px] top-[35.3%] bottom-[10%] lg:right-[48px]"></div>   
       <WhoAreWe/>
       <div className="absolute z-10 hidden lg:block lg:w-[1.5px] lg:h-[567px] bg-white/30 top-[64%] bottom-[10%] lg:left-[50px]"></div>
-      <div className="absolute z-15 hidden lg:block bg-[#E4E3E3] lg:w-[34px] lg:h-[5px] top-[68%] bottom-[10%] lg:left-[34px]"></div>   
-      <div className="absolute z-15 hidden lg:block bg-[#E4E3E3] lg:h-[34px] lg:w-[5px] top-[66.7%] bottom-[10%] lg:left-[48.4px]"></div> 
+      <div className="absolute z-15 hidden lg:block bg-[#E4E3E3] lg:w-[34px] lg:h-[5px] top-[66.7%] bottom-[10%] lg:left-[34px]"></div>   
+      <div className="absolute z-15 hidden lg:block bg-[#E4E3E3] lg:h-[34px] lg:w-[5px] top-[65.4%] bottom-[10%] lg:left-[48.4px]"></div> 
       <SupportingCompanies/>
     <WhyPartnerWith/>
     </div>

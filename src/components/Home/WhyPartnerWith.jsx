@@ -29,7 +29,7 @@ export const WhyPartnerWith = () => {
 
        <div className="bg-[#25364F] max-w-full min-h-fit py-12 md:py-16 lg:py-20">
             <div className="md:container mx-auto">
-                <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10">
+                <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 lg:px-[50px]">
 
                     {/* LEFT SECTION */}
                     <div className="px-6 md:px-12 lg:p-[100px]">
@@ -54,7 +54,7 @@ export const WhyPartnerWith = () => {
                             </div>
                         </div>
 
-                        {/* Paragraph */}
+                        
                         <div className="mt-6 lg:max-w-[456px]">
                             <p className="text-white font-roboto font-normal text-sm md:text-[15px] lg:text-[16px] leading-relaxed">
                                 We combine regional expertise with global innovation to deliver

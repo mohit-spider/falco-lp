@@ -49,70 +49,94 @@ export const SupportingCompanies = () => {
     ]
 
     return (
-        <div id="supporting-companies" className="bg-[#1A2532] max-w-full min-h-[717px]">
-            <div className="py-[45px] px-5 md:p-[100px] flex flex-col">
-                <div>
-                    <h3 className="support-companies ">
-                        A portfolio of Companies Supporting<br />
-                        Innovation Across<span> Digital Infrastructure,<br />
-                            Intelligent Systems, and Manufacturing.</span>
-                    </h3>
-                </div>
-                <div className="mt-[69px] w-full">
+        <section
+            id="supporting-companies"
+            className="bg-[#1A2532] w-full py-14 md:py-20"
+        >
+            <div className="px-5 md:px-12 lg:px-[100px]">
+
+                {/* Heading */}
+                <h3 className="text-white font-roboto font-semibold text-2xl md:text-3xl lg:text-4xl leading-tight">
+                    A portfolio of Companies Supporting <br className="hidden md:block" />
+                    Innovation Across{" "}
+                    <span className="text-[#A1E0FF] block md:inline">
+                        Digital Infrastructure, Intelligent Systems, and Manufacturing.
+                    </span>
+                </h3>
+
+                {/* Swiper */}
+                <div className="mt-12 md:mt-16 w-full">
                     {isMounted && (
                         <Swiper
-                            modules={[Autoplay, Pagination, Navigation]}
-                            spaceBetween={49}
+                            modules={[Autoplay, Navigation]}
+                            spaceBetween={24}
                             slidesPerView={1}
-                            navigation={true}
-                            style={{
-                                "--swiper-navigation-color": "#1578DB",
-                                "--swiper-navigation-size": "30px",
+                            navigation
+                            autoplay={{
+                                delay: 5000,
+                                disableOnInteraction: false,
                             }}
-                            autoplay={{ delay: 5000, disableOnInteraction: false }}
                             breakpoints={{
+                                640: {
+                                    slidesPerView: 1.2,
+                                    spaceBetween: 20,
+                                },
                                 768: {
                                     slidesPerView: 2,
+                                    spaceBetween: 24,
                                 },
                                 1024: {
                                     slidesPerView: 3,
+                                    spaceBetween: 30,
                                 },
                             }}
-                            className="w-full !pb-12 !px-10 md:!px-12 lg:!px-14"
+                            className="!pb-14"
                         >
-                            {cards.map((item, index) => {
-                                return (
-                                    <SwiperSlide key={index} className="!h-auto">
-                                        <div className="flex flex-col w-full min-h-[420px] relative bg-[#0B0B0B] pt-[59px] px-[30px] rounded-[8px] pb-[45px] shadow-[0_0_5px_rgba(240,246,255,0.5)]">
+                            {cards.map((item, index) => (
+                                <SwiperSlide key={index} className="h-auto">
+                                    <div className="h-full min-h-[320px] md:min-h-[350px] flex flex-col bg-[#0B0B0B] rounded-lg p-6 md:p-8 shadow-[0_0_5px_rgba(240,246,255,0.25)] relative">
+
+                                        <div className="absolute top-6 right-6">
                                             <Image
                                                 src={item.icon}
-                                                alt="icon"
-                                                width={35}
-                                                height={35}
-                                                className="absolute top-12 right-12 w-[35px] h-[35px]"
+                                                alt={item.title}
+                                                width={34}
+                                                height={34}
+                                                className="w-[34px] h-[34px]"
                                             />
-                                            <h3 className="font-roboto font-bold mt-[15px] text-[26px] leading-[1.1] text-white whitespace-pre-line ">
-                                                {item.title}
-                                            </h3>
-                                            <p className="font-roboto font-normal mt-[20px] text-white text-[16px]">
-                                                {item.short_title}
-                                            </p>
-                                            <p className="font-roboto font-normal mt-[10px] text-white text-[16px] whitespace-pre-line flex-1">
-                                                {item.desc}
-                                            </p>
-                                            <div className="mt-auto flex items-center justify-between w-full pt-[22px]">
-                                                <Link href={item.link} className="cursor-pointer font-roboto font-normal bg-[#1578DB] hover:bg-[#1578DB]/80 text-white text-[16px] w-full py-[5px] rounded-[5px] text-center">
-                                                    Know More
-                                                </Link>
-                                            </div>
                                         </div>
-                                    </SwiperSlide>
-                                )
-                            })}
+
+                                       
+                                        <h3 className="font-roboto font-bold text-lg md:text-xl lg:text-2xl text-white leading-tight pr-10">
+                                            {item.title}
+                                        </h3>
+
+                                      
+                                        <p className="mt-4 text-white/90 font-roboto text-sm md:text-[15px] lg:text-[16px]">
+                                            {item.short_title}
+                                        </p>
+
+                                       
+                                        <p className="mt-3 text-white/80 font-roboto text-sm md:text-[15px] leading-relaxed flex-1">
+                                            {item.desc}
+                                        </p>
+
+                                       
+                                        <div className="mt-6">
+                                            <Link
+                                                href={item.link}
+                                                className="block w-full text-center bg-[#1578DB] hover:bg-[#1578DB]/80 transition text-white text-sm md:text-[15px] py-2 rounded-md"
+                                            >
+                                                Know More
+                                            </Link>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                            ))}
                         </Swiper>
                     )}
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
